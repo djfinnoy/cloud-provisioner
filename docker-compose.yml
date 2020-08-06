@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  gcp-provisioner:
+    image: gcp-provisioner
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: gcp-provisioner
+    working_dir: /local
+    volumes:
+      - ./../:/local/
