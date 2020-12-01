@@ -10,3 +10,5 @@ services:
     working_dir: /local
     volumes:
       - ./../:/local/
+      - $HOME/.config/zsh:/root/.config/zsh
+
